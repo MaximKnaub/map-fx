@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.mknaub</groupId>
     <artifactId>MapFX</artifactId>
-    <version>0.1</version>
+    <version>0.1-release</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
