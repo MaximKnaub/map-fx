@@ -1,6 +1,6 @@
-package de.knaubmaxim.mapfx.coord;
+package de.mknaub.mapfx.coord;
 
-import static de.knaubmaxim.mapfx.coord.CoordinateUtils.bearingTo;
+import static de.mknaub.mapfx.coord.CoordinateUtils.bearingTo;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;

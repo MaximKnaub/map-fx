@@ -1,6 +1,6 @@
-package de.knaubmaxim.mapfx.events;
+package de.mknaub.mapfx.events;
 
-import de.knaubmaxim.mapfx.MapView;
+import de.mknaub.mapfx.MapView;
 import javafx.event.Event;
 import javafx.event.EventDispatchChain;
 import javafx.event.EventDispatcher;

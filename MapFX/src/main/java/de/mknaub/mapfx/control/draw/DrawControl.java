@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.control.draw;
+package de.mknaub.mapfx.control.draw;
 
-import de.knaubmaxim.mapfx.control.Control;
-import de.knaubmaxim.mapfx.layer.vector.VectorLayer;
+import de.mknaub.mapfx.control.Control;
+import de.mknaub.mapfx.layer.vector.VectorLayer;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;

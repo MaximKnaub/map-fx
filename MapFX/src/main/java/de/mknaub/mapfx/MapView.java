@@ -1,15 +1,15 @@
-package de.knaubmaxim.mapfx;
+package de.mknaub.mapfx;
 
-import de.knaubmaxim.mapfx.control.Control;
-import de.knaubmaxim.mapfx.control.NavigationControl;
-import de.knaubmaxim.mapfx.coord.Bound;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.events.CenterEvent;
-import de.knaubmaxim.mapfx.events.DragEvent;
-import de.knaubmaxim.mapfx.events.MapEvent;
-import de.knaubmaxim.mapfx.events.ZoomEvent;
-import de.knaubmaxim.mapfx.layer.Layer;
-import de.knaubmaxim.mapfx.layer.TileLayer;
+import de.mknaub.mapfx.control.Control;
+import de.mknaub.mapfx.control.NavigationControl;
+import de.mknaub.mapfx.coord.Bound;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.events.CenterEvent;
+import de.mknaub.mapfx.events.DragEvent;
+import de.mknaub.mapfx.events.MapEvent;
+import de.mknaub.mapfx.events.ZoomEvent;
+import de.mknaub.mapfx.layer.Layer;
+import de.mknaub.mapfx.layer.TileLayer;
 import java.util.Collection;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.ObjectProperty;

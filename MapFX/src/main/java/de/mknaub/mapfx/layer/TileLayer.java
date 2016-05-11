@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.layer;
+package de.mknaub.mapfx.layer;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.coord.Bound;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.layer.tile.Tile;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.coord.Bound;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.layer.tile.Tile;
 import static java.lang.Double.MAX_VALUE;
 import static java.lang.Math.PI;
 import static java.lang.Math.ceil;
@@ -316,7 +316,7 @@ public abstract class TileLayer extends Layer {
         return layerBound;
     }
 
-    @Data public class TileMetaData {
+    @Data public static class TileMetaData {
 
         private TileLayer tileLayer;
         private int z;

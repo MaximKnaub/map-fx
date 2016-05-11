@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.layer.tileprovider;
+package de.mknaub.mapfx.layer.tileprovider;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.layer.TileLayer;
-import de.knaubmaxim.mapfx.layer.tile.ProviderTile;
-import de.knaubmaxim.mapfx.layer.tile.TileType;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.layer.TileLayer;
+import de.mknaub.mapfx.layer.tile.ProviderTile;
+import de.mknaub.mapfx.layer.tile.TileType;
 import java.util.Optional;
 import javafx.beans.property.SimpleObjectProperty;
 import static javafx.collections.FXCollections.observableArrayList;

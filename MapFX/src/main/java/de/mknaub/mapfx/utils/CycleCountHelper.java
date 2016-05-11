@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.utils;
+package de.mknaub.mapfx.utils;
 
 /**
  *

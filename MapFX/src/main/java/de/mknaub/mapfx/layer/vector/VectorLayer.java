@@ -1,8 +1,8 @@
-package de.knaubmaxim.mapfx.layer.vector;
+package de.mknaub.mapfx.layer.vector;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.layer.Layer;
-import de.knaubmaxim.mapfx.layer.vector.features.Drawable;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.layer.Layer;
+import de.mknaub.mapfx.layer.vector.features.Drawable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedList;

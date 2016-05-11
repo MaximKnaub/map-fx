@@ -1,0 +1,41 @@
+.map{
+    -error: #FF4D4D;
+    -warn:  #FFC44D;
+    -info:  #0278A1; /*#039ED3*/
+    -map:   TRANSPARENT;
+}
+
+.map-pane{
+    -fx-background-color: -map;
+}
+
+.map-fx-shape{
+    /*    -fx-fill: dodgerblue;
+        -fx-stroke: black;
+        -fx-stroke-width: 1px;*/
+    /*-fx-base: #ececec;*/
+}
+
+.map-fx-label{
+    -fx-text-fill: derive(dodgerblue, -75%);
+    -fx-font-size: 1.4em;
+    -fx-font-family: "System";
+    -fx-opacity: 1;
+}
+
+/*controls*/
+.mouse-position .label{
+    -fx-background-color: #F1EEE8;
+    -fx-padding: 2px 1px 2px 1px;
+    -fx-border-color: #232332;
+    -fx-border-width: 1px 0px 0px 1px;
+}
+
+.map-fx-scale-line{
+    -fx-background-color:  DODGERBLUE, WHITE, DODGERBLUE;
+    -fx-background-insets:  0,10 5 5 5,6;
+}
+
+.map-fx-scale-line .label{
+    -fx-text-fill: WHITE;
+}

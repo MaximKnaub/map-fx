@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.layer;
+package de.mknaub.mapfx.layer;
 
 import javafx.scene.Node;
 

@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.layer.shape;
+package de.mknaub.mapfx.layer.shape;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.layer.Layer;
-import de.knaubmaxim.mapfx.layer.shape.features.BasicShape;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.layer.Layer;
+import de.mknaub.mapfx.layer.shape.features.BasicShape;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;

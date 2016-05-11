@@ -1,8 +1,8 @@
-package de.knaubmaxim.mapfx.control;
+package de.mknaub.mapfx.control;
 
-import de.knaubmaxim.mapfx.Extent;
-import de.knaubmaxim.mapfx.Viewport;
-import de.knaubmaxim.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.Extent;
+import de.mknaub.mapfx.Viewport;
+import de.mknaub.mapfx.coord.Coordinate;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleDoubleProperty;

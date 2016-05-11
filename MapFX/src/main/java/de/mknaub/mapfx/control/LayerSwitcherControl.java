@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.control;
+package de.mknaub.mapfx.control;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.layer.node.NodeLayer;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.layer.node.NodeLayer;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.geometry.Pos;
 import javafx.scene.control.CheckBox;

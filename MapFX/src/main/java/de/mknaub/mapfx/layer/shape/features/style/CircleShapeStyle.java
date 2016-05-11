@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.layer.shape.features.style;
+package de.mknaub.mapfx.layer.shape.features.style;
 
 import javafx.beans.property.SimpleDoubleProperty;
 

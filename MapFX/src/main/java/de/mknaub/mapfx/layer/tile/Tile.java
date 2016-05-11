@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.layer.tile;
+package de.mknaub.mapfx.layer.tile;
 
-import de.knaubmaxim.mapfx.coord.Bound;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import static de.knaubmaxim.mapfx.coord.CoordinateUtils.point2Coord;
-import de.knaubmaxim.mapfx.layer.TileLayer.TileMetaData;
+import de.mknaub.mapfx.coord.Bound;
+import de.mknaub.mapfx.coord.Coordinate;
+import static de.mknaub.mapfx.coord.CoordinateUtils.point2Coord;
+import de.mknaub.mapfx.layer.TileLayer.TileMetaData;
 import static java.lang.Math.floor;
 import static java.lang.Math.pow;
 import java.util.LinkedList;
@@ -14,7 +14,6 @@ import javafx.scene.layout.Region;
 import javafx.scene.transform.Scale;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import static de.knaubmaxim.mapfx.coord.CoordinateUtils.point2Coord;
 
 /**
  *

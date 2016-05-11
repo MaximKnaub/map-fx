@@ -1,10 +1,8 @@
-package de.knaubmaxim.mapfx.layer;
+package de.mknaub.mapfx.layer;
 
-import de.knaubmaxim.mapfx.MapView;
+import de.mknaub.mapfx.MapView;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 
 /**
  *

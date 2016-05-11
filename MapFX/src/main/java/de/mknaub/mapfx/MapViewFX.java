@@ -1,19 +1,19 @@
-package de.knaubmaxim.mapfx;
+package de.mknaub.mapfx;
 
-import de.knaubmaxim.mapfx.control.Control;
-import de.knaubmaxim.mapfx.control.NavigationControl;
-import de.knaubmaxim.mapfx.control.ScaleLine;
-import de.knaubmaxim.mapfx.coord.Bound;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.coord.CoordinateUtils;
-import de.knaubmaxim.mapfx.events.CenterEvent;
-import de.knaubmaxim.mapfx.events.DragEvent;
-import de.knaubmaxim.mapfx.events.MapEvent;
-import de.knaubmaxim.mapfx.events.MapFXEventDispatcher;
-import de.knaubmaxim.mapfx.events.ZoomEvent;
-import de.knaubmaxim.mapfx.layer.Layer;
-import de.knaubmaxim.mapfx.layer.TileLayer;
-import de.knaubmaxim.mapfx.layer.tileprovider.OpenStreetMapLayer;
+import de.mknaub.mapfx.control.Control;
+import de.mknaub.mapfx.control.NavigationControl;
+import de.mknaub.mapfx.control.ScaleLine;
+import de.mknaub.mapfx.coord.Bound;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.coord.CoordinateUtils;
+import de.mknaub.mapfx.events.CenterEvent;
+import de.mknaub.mapfx.events.DragEvent;
+import de.mknaub.mapfx.events.MapEvent;
+import de.mknaub.mapfx.events.MapFXEventDispatcher;
+import de.mknaub.mapfx.events.ZoomEvent;
+import de.mknaub.mapfx.layer.Layer;
+import de.mknaub.mapfx.layer.TileLayer;
+import de.mknaub.mapfx.layer.tileprovider.OpenStreetMapLayer;
 import static java.lang.Double.MAX_VALUE;
 import static java.lang.Math.PI;
 import static java.lang.Math.atan;
@@ -73,7 +73,7 @@ public class MapViewFX extends Pane implements MapView {
 
     public MapViewFX() {
         baseLayerProperty = new SimpleObjectProperty<>();
-        getStylesheets().add("/de/knaubmaxim/mapfx/css/default-style.css");
+        getStylesheets().add("/de/mknaub/mapfx/css/default-style.css");
         layerPane = new StackPane();
         layerPane.setAlignment(Pos.CENTER);
         getChildren().add(layerPane);

@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.control;
+package de.mknaub.mapfx.control;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.coord.Coordinate;
 import static java.lang.Boolean.FALSE;
 import static java.lang.Boolean.TRUE;
 import javafx.beans.property.BooleanProperty;

@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.layer.tile;
+package de.mknaub.mapfx.layer.tile;
 
 import javafx.beans.property.ReadOnlyStringProperty;
 

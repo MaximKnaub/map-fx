@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.layer.shape.features;
+package de.mknaub.mapfx.layer.shape.features;
 
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.layer.shape.features.style.ArcShapeStyle;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.layer.shape.features.style.ArcShapeStyle;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.paint.Color;
 import static javafx.scene.shape.ArcType.ROUND;

@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.control;
+package de.mknaub.mapfx.control;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.coord.CoordinateUtils;
-import de.knaubmaxim.mapfx.layer.node.NodeLayer;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.coord.CoordinateUtils;
+import de.mknaub.mapfx.layer.node.NodeLayer;
 import java.util.Objects;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;

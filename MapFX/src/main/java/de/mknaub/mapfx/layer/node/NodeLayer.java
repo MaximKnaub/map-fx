@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.layer.node;
+package de.mknaub.mapfx.layer.node;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.layer.Layer;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.layer.Layer;
 import static javafx.geometry.Pos.BOTTOM_RIGHT;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;

@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx;
+package de.mknaub.mapfx;
 
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleDoubleProperty;

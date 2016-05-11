@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.layer.tile;
+package de.mknaub.mapfx.layer.tile;
 
-import de.knaubmaxim.mapfx.events.MapEvent;
-import de.knaubmaxim.mapfx.events.tile.TileEvent;
-import de.knaubmaxim.mapfx.layer.TileLayer.TileMetaData;
-import de.knaubmaxim.mapfx.layer.tileprovider.TileProvider;
+import de.mknaub.mapfx.events.MapEvent;
+import de.mknaub.mapfx.events.tile.TileEvent;
+import de.mknaub.mapfx.layer.TileLayer.TileMetaData;
+import de.mknaub.mapfx.layer.tileprovider.TileProvider;
 import static java.lang.String.format;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -25,6 +25,7 @@ public class ProviderTile extends Tile {
 
     public ProviderTile(TileMetaData metaData) {
         super(metaData);
+        
         image = new Image(format("%s/%s/%s/%s%s",
                 ((TileProvider)metaData.getTileLayer()).getBaseUrl(),
                 metaData.getZ(),

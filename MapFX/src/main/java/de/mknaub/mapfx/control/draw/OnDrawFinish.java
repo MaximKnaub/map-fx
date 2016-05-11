@@ -1,6 +1,6 @@
-package de.knaubmaxim.mapfx.control.draw;
+package de.mknaub.mapfx.control.draw;
 
-import de.knaubmaxim.mapfx.layer.vector.features.BasicFeature;
+import de.mknaub.mapfx.layer.vector.features.BasicFeature;
 
 /**
  *

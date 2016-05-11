@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.coord;
+package de.mknaub.mapfx.coord;
 
-import static de.knaubmaxim.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.BREITENGRAD;
-import static de.knaubmaxim.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.LAENGENGRAD;
+import static de.mknaub.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.BREITENGRAD;
+import static de.mknaub.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.LAENGENGRAD;
 import static java.lang.Math.floor;
 import static java.lang.Math.round;
 

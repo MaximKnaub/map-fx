@@ -1,8 +1,8 @@
-package de.knaubmaxim.mapfx.coord;
+package de.mknaub.mapfx.coord;
 
-import de.knaubmaxim.mapfx.Viewport;
-import static de.knaubmaxim.mapfx.coord.CoordinateUtils.LAENGEN_BREITEN_GRAD.BREITENGRAD;
-import static de.knaubmaxim.mapfx.coord.CoordinateUtils.LAENGEN_BREITEN_GRAD.LAENGENGRAD;
+import de.mknaub.mapfx.Viewport;
+import static de.mknaub.mapfx.coord.CoordinateUtils.LAENGEN_BREITEN_GRAD.BREITENGRAD;
+import static de.mknaub.mapfx.coord.CoordinateUtils.LAENGEN_BREITEN_GRAD.LAENGENGRAD;
 import static java.lang.Double.parseDouble;
 import static java.lang.Math.PI;
 import static java.lang.Math.asin;

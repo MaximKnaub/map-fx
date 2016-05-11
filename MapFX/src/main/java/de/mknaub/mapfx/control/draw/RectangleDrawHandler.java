@@ -1,9 +1,9 @@
-package de.knaubmaxim.mapfx.control.draw;
+package de.mknaub.mapfx.control.draw;
 
-import de.knaubmaxim.mapfx.coord.Bound;
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.layer.vector.features.BasicFeature;
-import de.knaubmaxim.mapfx.layer.vector.features.Rectangle;
+import de.mknaub.mapfx.coord.Bound;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.layer.vector.features.BasicFeature;
+import de.mknaub.mapfx.layer.vector.features.Rectangle;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.input.MouseEvent;

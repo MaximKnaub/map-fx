@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.layer.shape.features;
+package de.mknaub.mapfx.layer.shape.features;
 
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.layer.shape.features.style.CircleShapeStyle;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.layer.shape.features.style.CircleShapeStyle;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.shape.Shape;
 

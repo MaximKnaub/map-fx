@@ -1,7 +1,7 @@
-package de.knaubmaxim.mapfx.layer.tileprovider;
+package de.mknaub.mapfx.layer.tileprovider;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.layer.tile.MapTileType;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.layer.tile.MapTileType;
 
 /**
  *

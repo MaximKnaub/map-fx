@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.coord;
+package de.mknaub.mapfx.coord;
 
 import java.util.List;
 

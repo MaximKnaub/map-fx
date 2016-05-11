@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.layer.utils;
+package de.mknaub.mapfx.layer.utils;
 
 // License: GPL. Copyright 2007 by Tim Haussmann
 
@@ -10,9 +10,6 @@ import static java.lang.Math.min;
 import static java.lang.Math.sin;
 import static java.lang.Math.toDegrees;
 import static java.lang.Math.toRadians;
-import static java.lang.Math.min;
-import static java.lang.Math.min;
-import static java.lang.Math.min;
 
 /**
  * This class implements the Mercator Projection as it is used by Openstreetmap

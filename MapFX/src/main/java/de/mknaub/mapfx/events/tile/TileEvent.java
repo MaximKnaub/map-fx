@@ -1,6 +1,6 @@
-package de.knaubmaxim.mapfx.events.tile;
+package de.mknaub.mapfx.events.tile;
 
-import de.knaubmaxim.mapfx.layer.tile.Tile;
+import de.mknaub.mapfx.layer.tile.Tile;
 
 /**
  *

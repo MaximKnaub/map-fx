@@ -1,8 +1,8 @@
-package de.knaubmaxim.mapfx.control.draw;
+package de.mknaub.mapfx.control.draw;
 
-import de.knaubmaxim.mapfx.coord.Coordinate;
-import de.knaubmaxim.mapfx.layer.vector.features.BasicFeature;
-import de.knaubmaxim.mapfx.layer.vector.features.Polygon;
+import de.mknaub.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.layer.vector.features.BasicFeature;
+import de.mknaub.mapfx.layer.vector.features.Polygon;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.scene.input.MouseEvent;

@@ -1,10 +1,10 @@
-package de.knaubmaxim.mapfx.coord;
+package de.mknaub.mapfx.coord;
 
-import static de.knaubmaxim.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.BREITENGRAD;
-import static de.knaubmaxim.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.LAENGENGRAD;
-import static de.knaubmaxim.mapfx.coord.CoordinateConverter.WGS84ToDez;
-import static de.knaubmaxim.mapfx.coord.CoordinateConverter.dez2grad;
-import static de.knaubmaxim.mapfx.coord.CoordinateUtils.EARTH_RADIUS;
+import static de.mknaub.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.BREITENGRAD;
+import static de.mknaub.mapfx.coord.CoordinateConverter.LAENGEN_BREITEN_GRAD.LAENGENGRAD;
+import static de.mknaub.mapfx.coord.CoordinateConverter.WGS84ToDez;
+import static de.mknaub.mapfx.coord.CoordinateConverter.dez2grad;
+import static de.mknaub.mapfx.coord.CoordinateUtils.EARTH_RADIUS;
 import static java.lang.Math.PI;
 import static java.lang.Math.asin;
 import static java.lang.Math.atan2;

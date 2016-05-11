@@ -1,6 +1,6 @@
-package de.knaubmaxim.mapfx.layer.shape.features;
+package de.mknaub.mapfx.layer.shape.features;
 
-import de.knaubmaxim.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.coord.Coordinate;
 import javafx.beans.property.StringProperty;
 import javafx.scene.control.Label;
 

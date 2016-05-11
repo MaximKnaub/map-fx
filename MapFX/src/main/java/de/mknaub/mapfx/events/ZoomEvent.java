@@ -1,4 +1,4 @@
-package de.knaubmaxim.mapfx.events;
+package de.mknaub.mapfx.events;
 
 import lombok.Getter;
 

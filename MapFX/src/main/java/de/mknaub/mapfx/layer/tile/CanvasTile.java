@@ -1,6 +1,6 @@
-package de.knaubmaxim.mapfx.layer.tile;
+package de.mknaub.mapfx.layer.tile;
 
-import de.knaubmaxim.mapfx.layer.TileLayer.TileMetaData;
+import de.mknaub.mapfx.layer.TileLayer.TileMetaData;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.text.Font;

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%highlight(%-5level) | %cyan(%-12date{YYYY-MM-dd HH:mm:ss}) | %green(%logger{70} \(%line\)) | %msg%n</Pattern>
+        </layout>
+    </appender>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>mapViewFX.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%-5level |%-12date{YYYY-MM-dd HH:mm:ss} |%logger{70} \(%line\) | %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="de.mknaub" level="INFO" />
+    <logger name="de.mknaub" level="DEBUG" />
+    <logger name="de.mknaub" level="WARN" />
+
+    <root level="ERROR">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+    <root level="WARN">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+    <root level="TRACE">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>

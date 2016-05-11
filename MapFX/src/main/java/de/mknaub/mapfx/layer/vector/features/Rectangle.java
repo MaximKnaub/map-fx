@@ -1,8 +1,8 @@
-package de.knaubmaxim.mapfx.layer.vector.features;
+package de.mknaub.mapfx.layer.vector.features;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.coord.Bound;
-import de.knaubmaxim.mapfx.coord.Coordinate;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.coord.Bound;
+import de.mknaub.mapfx.coord.Coordinate;
 import javafx.application.Platform;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;

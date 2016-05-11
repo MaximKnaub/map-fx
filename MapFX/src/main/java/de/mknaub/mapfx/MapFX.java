@@ -1,8 +1,7 @@
-package de.knaubmaxim.mapfx;
+package de.mknaub.mapfx;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
@@ -13,7 +12,8 @@ import javafx.stage.Stage;
 public class MapFX extends Application {
 
     @Override public void start(Stage primaryStage) throws Exception {
-        primaryStage.setScene(new Scene(new StackPane(new Button("MapFX")), 512, 250));
+        System.out.println("test");
+        primaryStage.setScene(new Scene(new StackPane(new MapViewFX()), 1024, 728));
         primaryStage.show();
     }
 

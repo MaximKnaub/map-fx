@@ -1,8 +1,8 @@
-package de.knaubmaxim.mapfx.layer.vector.features;
+package de.mknaub.mapfx.layer.vector.features;
 
-import de.knaubmaxim.mapfx.MapView;
-import de.knaubmaxim.mapfx.events.MapViewEvent;
-import de.knaubmaxim.mapfx.layer.vector.VectorLayer;
+import de.mknaub.mapfx.MapView;
+import de.mknaub.mapfx.events.MapViewEvent;
+import de.mknaub.mapfx.layer.vector.VectorLayer;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleDoubleProperty;
