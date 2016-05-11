@@ -2,8 +2,6 @@ package de.mknaub.mapfxdemo;
 
 import javafx.application.Application;
 import static javafx.application.Application.launch;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
@@ -15,7 +13,6 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
         Scene scene = new Scene(new Button("click"));
         scene.getStylesheets().add("/styles/Styles.css");
-        
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
         stage.show();
