@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.mknaub</groupId>
     <artifactId>MapFX</artifactId>
-    <version>0.2-development</version>
+    <version>0.1-release</version>
     <packaging>jar</packaging>
     <properties>
         <java.version>1.8</java.version>
