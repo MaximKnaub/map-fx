@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 public class MapFX extends Application {
 
     @Override public void start(Stage primaryStage) throws Exception {
-        System.out.println("test");
         primaryStage.setScene(new Scene(new StackPane(new MapViewFX()), 1024, 728));
         primaryStage.show();
     }
