@@ -4,7 +4,7 @@
 
     <groupId>de.mknaub</groupId>
     <artifactId>MapFXDemo</artifactId>
-    <version>0.2-development</version>
+    <version>0.3-development</version>
     <packaging>jar</packaging>
 
     <name>MapFXDemo</name>
