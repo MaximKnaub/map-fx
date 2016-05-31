@@ -1,6 +1,8 @@
 package de.mknaub.mapfx.coord;
 
 import java.util.List;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
 
 /**
  *
@@ -14,19 +16,19 @@ import java.util.List;
  */
 public class Bound {
 
-    private Double top;
-    private Double right;
-    private Double bottom;
-    private Double left;
+    private final DoubleProperty top = new SimpleDoubleProperty();
+    private final DoubleProperty right = new SimpleDoubleProperty();
+    private final DoubleProperty bottom = new SimpleDoubleProperty();
+    private final DoubleProperty left = new SimpleDoubleProperty();
 
     public Bound() {
     }
 
     public Bound(double top, double right, double bottom, double left) {
-        this.top = top;
-        this.right = right;
-        this.bottom = bottom;
-        this.left = left;
+        this.top.setValue(top);
+        this.right.setValue(right);
+        this.bottom.setValue(bottom);
+        this.left.setValue(left);
     }
 
     public Bound(double longitude, double latitude) {
@@ -52,24 +54,24 @@ public class Bound {
      * @param radius
      */
     public Bound(Coordinate coordinate, double radius) {
-        this.left = coordinate.destinationPoint(270, radius).getLongitude();
-        this.right = coordinate.destinationPoint(90, radius).getLongitude();
-        this.bottom = coordinate.destinationPoint(180, radius).getLatitude();
-        this.top = coordinate.destinationPoint(0, radius).getLatitude();
+        this.left.setValue(coordinate.destinationPoint(270, radius).getLongitude());
+        this.right.setValue(coordinate.destinationPoint(90, radius).getLongitude());
+        this.bottom.setValue(coordinate.destinationPoint(180, radius).getLatitude());
+        this.top.setValue(coordinate.destinationPoint(0, radius).getLatitude());
     }
 
     public Bound(List<Coordinate> coordList) {
         if (coordList.isEmpty() == false) {
-            this.top = coordList.stream().mapToDouble(Coordinate::getLatitude).max().getAsDouble();
-            this.right = coordList.stream().mapToDouble(Coordinate::getLongitude).max().getAsDouble();
-            this.bottom = coordList.stream().mapToDouble(Coordinate::getLatitude).min().getAsDouble();
-            this.left = coordList.stream().mapToDouble(Coordinate::getLongitude).min().getAsDouble();
+            this.top.setValue(coordList.stream().mapToDouble(Coordinate::getLatitude).max().getAsDouble());
+            this.right.setValue(coordList.stream().mapToDouble(Coordinate::getLongitude).max().getAsDouble());
+            this.bottom.setValue(coordList.stream().mapToDouble(Coordinate::getLatitude).min().getAsDouble());
+            this.left.setValue(coordList.stream().mapToDouble(Coordinate::getLongitude).min().getAsDouble());
         }
     }
 
     public void extend(Bound bound) {
-        extend(bound.left, bound.top);
-        extend(bound.right, bound.bottom);
+        extend(bound.left.getValue(), bound.top.getValue());
+        extend(bound.right.getValue(), bound.bottom.getValue());
     }
 
     public void extend(Coordinate coord) {
@@ -77,26 +79,10 @@ public class Bound {
     }
 
     public void extend(double longitude, double latitude) {
-        if (right != null) {
-            right = longitude > right ? longitude : right;
-        } else {
-            right = longitude;
-        }
-        if (left != null) {
-            left = longitude < left ? longitude : left;
-        } else {
-            left = longitude;
-        }
-        if (top != null) {
-            top = latitude > top ? latitude : top;
-        } else {
-            top = latitude;
-        }
-        if (bottom != null) {
-            bottom = latitude < bottom ? latitude : bottom;
-        } else {
-            bottom = latitude;
-        }
+        right.setValue(longitude > right.getValue() ? longitude : right.getValue());
+        left.setValue(longitude < left.getValue() ? longitude : left.getValue());
+        top.setValue(latitude > top.getValue() ? latitude : top.getValue());
+        bottom.setValue(latitude < bottom.getValue() ? latitude : bottom.getValue());
     }
 
     public boolean isInside(Coordinate coord) {
@@ -104,66 +90,82 @@ public class Bound {
     }
 
     public boolean isInside(double longitute, double latitude) {
-        if (top < latitude) {
+        if (top.getValue() < latitude) {
             return false;
-        } else if (bottom > latitude) {
+        } else if (bottom.getValue() > latitude) {
             return false;
-        } else if (left > longitute) {
+        } else if (left.getValue() > longitute) {
             return false;
         } else {
-            return right >= longitute;
+            return right.getValue() >= longitute;
         }
     }
 
     public boolean isInside(Bound bound) {
-        return isInside(bound.left, bound.top)
-                || isInside(bound.right, bound.top)
-                || isInside(bound.right, bound.bottom)
-                || isInside(bound.left, bound.bottom);
+        return isInside(bound.left.getValue(), bound.top.getValue())
+                || isInside(bound.right.getValue(), bound.top.getValue())
+                || isInside(bound.right.getValue(), bound.bottom.getValue())
+                || isInside(bound.left.getValue(), bound.bottom.getValue());
     }
 
     public boolean intersects(Bound bound) {
-        boolean comp0 = this.left <= bound.right;
-        boolean comp1 = this.right >= bound.left;
-        boolean comp2 = this.top >= bound.bottom;
-        boolean comp3 = this.bottom <= bound.top;
+        boolean comp0 = this.left.getValue() <= bound.right.getValue();
+        boolean comp1 = this.right.getValue() >= bound.left.getValue();
+        boolean comp2 = this.top.getValue() >= bound.bottom.getValue();
+        boolean comp3 = this.bottom.getValue() <= bound.top.getValue();
         return comp0 && comp1 && comp2 && comp3;
     }
 
-    public Double getTop() {
+    public DoubleProperty topProperty() {
         return top;
     }
 
-    public void setTop(Double top) {
-        this.top = top;
+    public Double getTop() {
+        return top.getValue();
     }
 
-    public Double getRight() {
+    public void setTop(Double top) {
+        this.top.setValue(top);
+    }
+
+    public DoubleProperty rightProperty() {
         return right;
     }
 
-    public void setRight(Double right) {
-        this.right = right;
+    public Double getRight() {
+        return right.getValue();
     }
 
-    public Double getBottom() {
+    public void setRight(Double right) {
+        this.right.setValue(right);
+    }
+
+    public DoubleProperty bottomProperty() {
         return bottom;
     }
 
-    public void setBottom(Double bottom) {
-        this.bottom = bottom;
+    public Double getBottom() {
+        return bottom.getValue();
     }
 
-    public Double getLeft() {
+    public void setBottom(Double bottom) {
+        this.bottom.setValue(bottom);
+    }
+
+    public DoubleProperty leftProperty() {
         return left;
     }
 
+    public Double getLeft() {
+        return left.getValue();
+    }
+
     public void setLeft(Double left) {
-        this.left = left;
+        this.left.setValue(left);
     }
 
     @Override
     public String toString() {
-        return "Bound{" + "top=" + top + ", right=" + right + ", bottom=" + bottom + ", left=" + left + '}';
+        return "Bound{" + "top=" + top.getValue() + ", right=" + right.getValue() + ", bottom=" + bottom.getValue() + ", left=" + left.getValue() + '}';
     }
 }
